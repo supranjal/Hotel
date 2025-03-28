@@ -1,0 +1,43 @@
+.nav-font {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+}
+.welcome{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    
+}
+.nav-menu li a:hover {
+    text-decoration: underline;
+  }
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+} 
+.room-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.mons{
+    font-family: 'Montserrat', sans-serif;
+}
+.playfair{
+    font-family: 'Playfair Display', serif;
+}
+.btn-lux:hover {
+    background-color: #D4AF37; /* Gold */
+    color: black;
+  }
+  footer a{
+    text-decoration: none;
+  }

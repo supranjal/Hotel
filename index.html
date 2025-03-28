@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade Palace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Poppins:wght@200;400;600&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section: Hero image with navbar and welcome text -->
+    <header class="position-relative vh-100 vw-100 bg-dark">
+        <!-- Background image with overlay effect -->
+        <div class="position-absolute w-100 h-100 bg-cover" style="background-image: url('img/hotel.jpg'); opacity: 0.8; background-repeat: no-repeat; background-size: cover;" aria-hidden="true"></div>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 pt-3" style="z-index: 10;">
+            <div class="container pe-4">
+                <!-- Hotel Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/jade.png" alt="Jade Palace Logo" style="height: 50px; position: absolute; top: 10px; left: 10px; filter: brightness(1.2) contrast(1.2);">
+                </a>
+               
+                <!-- Mobile Menu Toggle Button -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navigation Menu Items -->
+                <div class="collapse navbar-collapse nav-menu" id="navbarNav">
+                    <ul class="navbar-nav ms-auto ">
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-dark nav-font" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-dark nav-font" href="#facilities">Facilities</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="nav-link text-dark nav-font" href="#room">Room</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark nav-font" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      
+        <!-- Welcome Message and CTA Button -->
+        <div class="position-relative container h-100 d-flex align-items-center text-white text-center justify-content-center">
+            <div class="welcome">
+                <h1>WELCOME TO <br><span style="font-size: 4rem;font-family: 'Aclonica',sans-serif;color: greenyellow;">JADE</span> <br>PALACE</h1>
+                <p class="mons">Book your stay and enjoy Luxury.</p>
+                <a href="#booking" class="btn btn-light" style="background-color: #228B22; color: white; border: none;">BOOK NOW</a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator at Bottom -->
+        <div class="position-absolute bottom-0 start-50 translate-middle-x">
+            <img src="./img/Scroll.png" alt="Scroll">
+        </div>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+        <!-- Facilities Section -->
+        <section class="Facilities-section py-4 vw-100 min-vh-100 d-flex align-items-center" id="facilities">
+            <div class="container-fluid px-5" style="max-width: 100%;">
+                <!-- Section Title and Description -->
+                <div class="row g-4">
+                    <div class="col-12">
+                        <h2 class="text-center" style="font-family: 'Aclonica',sans-serif;">Our Facilities</h2>
+                        <p style="font-family: Playfair Display, serif;font-size: 1.2rem;" class="text-center"> At Jade Palace, we provide a refined blend of comfort and convenience.</p>
+                    </div>
+                    
+                    <!-- Gym Facility Card -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./img/gym.png" class="card-img-top" alt="gym image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title ">The Gym</h5>
+                                <p class="card-text playfair">Stay fit with our modern equipment and facilities. Our professional trainers are available to assist with your workout routines.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Spa Facility Card -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./img/spa.jpg" class="card-img-top" alt="spa image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">The Spa</h5>
+                                <p class="card-text playfair">Relax and rejuvenate with our therapeutic treatments. Our skilled therapists offer a range of services to refresh your body and mind.</p>
+                            </div>
+                        </div>                
+                    </div>
+                    
+                    <!-- Restaurant Facility Card -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./img/rest.png" class="card-img-top" alt="restaurant">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Restaurant</h5>
+                                <p class="card-text playfair">Enjoy exquisite cuisine prepared by our talented chefs. We offer a blend of local specialties and international dishes in an elegant setting.</p>
+                            </div>
+                        </div>      
+                    </div>
+                    
+                    <!-- Swimming Pool Facility Card -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./img/swimming.jpg" class="card-img-top" alt="pool image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">The Pool</h5>
+                                <p class="card-text playfair">Take a refreshing dip in our pristine swimming pool. Perfect for exercise or relaxation with comfortable loungers and poolside service.</p>
+                            </div>
+                        </div>      
+                    </div>
+                    
+                    <!-- Laundry Facility Card -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="./img/laundary.png" class="card-img-top" alt="laundary image">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Laundry</h5>
+                                <p class="card-text playfair">Our prompt laundry service ensures your clothes are perfectly cleaned and pressed. Quick turnaround times to suit your busy schedule.</p>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Room Section: Display room types and rates -->
+        <section class="room-section py-4 vw-100 min-vh-100 d-flex align-items-center" id="room">
+            <div class="container-fluid px-4" style="max-width: 100%;">
+                <div class="row g-4">
+                    <!-- Section Title and Description -->
+                    <div class="col-12">
+                        <h2 class="text-center" style="font-family: 'Aclonica',sans-serif;">Room&Rates</h2>
+                        <p style="font-family: Playfair Display, serif;font-size: 1.2rem;" class="text-center">Discover our luxurious rooms designed for comfort and elegance. Experience premium amenities and exceptional service at competitive rates.</p>
+                    </div>
+                    
+                    <!-- Single Room Card -->
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm ">
+                            <div class="card-header py-3 ">
+                                <h3 class="my-0 fw-normal playfair" style="color:#2E8B57;">Single Room</h3>
+                            </div>
+                            <div class="card-body">
+                                <img src="./img/single.png" alt="single room" class="img-fluid room-img">
+                                <button type="button" class="w-100 btn btn-lg btn-success mons btn-lux">143$ Avg/Night</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Double Room Card -->
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm ">
+                            <div class="card-header py-3 ">
+                                <h3 class="my-0 fw-normal playfair" style="color: #2E8B57;">Double Room</h3>
+                            </div>
+                            <div class="card-body">
+                                <img src="./img/double.png" alt=" double room" class="img-fluid room-img">
+                                <button type="button" class="w-100 btn btn-lg btn-success mons btn-lux">155$ Avg/Night</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Twin Room Card -->
+                    <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm ">
+                            <div class="card-header py-3 ">
+                                <h3 class="my-0 fw-normal playfair" style="color: #2E8B57">Twin Room</h3>
+                            </div>
+                            <div class="card-body">
+                                <img src="./img/twin.png" alt="twin room" class="img-fluid room-img">
+                                <button type="button" class="w-100 btn btn-lg btn-success mons btn-lux">170$ Avg/Night</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+ 
+    <!-- Footer Section: Contact information and social links -->
+    <footer class="text-white text-center text-lg-start" style="background-color: #1B3A34;" id="contact">
+        <!-- Grid container for footer content -->
+        <div class="container p-4">
+            <div class="row mt-4">
+                <!-- About Hotel Column -->
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4 playfair">About Hotel</h5>
+                    <p class="mons">
+                        Jade Palace offers a perfect blend of luxury and comfort in the heart of the city. With modern amenities, elegant design, and personalized service, we ensure a memorable stay for every guest.
+                    </p>
+                    
+                    <!-- Social Media Links -->
+                    <div class="mt-4">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com" target="_blank" >
+                            <img src="./logo/facebook.png" alt="facebook" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://www.twitter.com" target="_blank">
+                            <img src="./logo/twitter.png" alt="twitter" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="./logo/instagram.png" alt="instagram" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Contact Information Column -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
+                        </li>
+                        <li class="mb-3">
+                            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours Column -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Opening hours</h5>
+                    <p class="mons">
+                        Monday - Friday: 8:00 AM - 8:00 PM
+                    </p>
+                    <p class="mons">
+                        Saturday - Sunday: 9:00 AM - 7:00 PM
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright Section -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2025 Copyright:
+            <a class="text-white" href="https://supranjalkhadka.com.np/">Jade Palace</a>
+        </div>
+    </footer>
+  
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
