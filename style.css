@@ -124,12 +124,11 @@ html {
     .nav-item {
         margin-right: 0.01px !important;
     }
-    
-    /* Target the actual navbar logo img directly instead of using an unused class */
     .navbar-brand img {
         height: 35px !important;
         top: 10px;
         left: 10px;
     }
+    
 }
 
