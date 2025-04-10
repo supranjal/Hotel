@@ -1,74 +1,135 @@
+/* Navigation styling */
 .nav-font {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
     font-weight: 400;
     text-transform: uppercase;
-    
+    transition: all 0.3s ease;
+    position: relative;
+    cursor: pointer;
 }
-.welcome{
+
+/* Fix hover effect - increase specificity and override Bootstrap */
+.navbar .nav-menu li a.nav-link {
+    color: #fff !important;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+/* Enhanced hover effect - stronger specificity */
+.navbar .nav-menu li a.nav-link:hover {
+    color: #228B22 !important;
+}
+
+.nav-menu li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #228B22;
+    transition: width 0.3s ease;
+    z-index: 5;
+}
+
+.nav-menu li a:hover::after {
+    width: 100%;
+}
+
+/* Ensure elements are clickable in navbar */
+.navbar .nav-menu {
+    z-index: 100;
+}
+
+
+
+
+
+
+/* Logo animation */
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.05);
+}
+
+/* Typography classes */
+.welcome {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     letter-spacing: 0.5px;
     font-weight: 400;
-    
 }
-.nav-menu li a:hover {
-    text-decoration: underline;
-  }
-  .card-img-top {
+
+.mons {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Image styling */
+.card-img-top {
     height: 200px;
     object-fit: cover;
 } 
+
 .room-img {
     height: 300px;
     object-fit: cover;
     width: 100%;
 }
-html{
+
+/* Button styling */
+.btn-lux:hover {
+    background-color: #D4AF37;
+    color: black;
+}
+.book-btn:hover{
+    background-color: #D4AF37;
+
+
+}
+
+/* Footer styling */
+footer a {
+    text-decoration: none;
+}
+
+/* Global styles */
+html {
     scroll-behavior: smooth;
 }
-.mons{
-    font-family: 'Montserrat', sans-serif;
-}
-.playfair{
-    font-family: 'Playfair Display', serif;
-}
-.btn-lux:hover {
-    background-color: #D4AF37; /* Gold */
-    color: black;
-  }
-  footer a{
-    text-decoration: none;
-  }
 
-
-
-/* Single media query for mobile devices */
+/* Mobile responsiveness */
 @media (max-width: 767px) {
-  .nav-font {
-    font-size: 0.75rem;
-    letter-spacing: 0.1px;
-  }
-  
-  /* Push navbar to the right and improve spacing */
-  .navbar-nav {
-    margin-left: 30px !important; /* Push navbar to the right of the logo */
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  .nav-item {
-    margin-right: 0.01px !important; /* Consistent spacing between items */
-  }
-  
-  /* Fix logo size and positioning */
-  .logo-img {
-    height: 35px !important; /* Reasonable size, not 1px */
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    filter: brightness(1.2) contrast(1.2);
-  }
+    .nav-font {
+        font-size: 0.75rem;
+        letter-spacing: 0.1px;
+    }
+    
+    .navbar-nav {
+        margin-left: 30px !important;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .nav-item {
+        margin-right: 0.01px !important;
+    }
+    
+    /* Target the actual navbar logo img directly instead of using an unused class */
+    .navbar-brand img {
+        height: 35px !important;
+        top: 10px;
+        left: 10px;
+    }
 }
 
