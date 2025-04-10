@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Poppins:wght@200;400;600&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- Header Section: Hero image with navbar and welcome text -->
@@ -17,22 +18,17 @@
         <div class="position-absolute w-100 h-100 bg-cover" style="background-image: url('img/hotel.jpg'); opacity: 0.8; background-repeat: no-repeat; background-size: cover;" aria-hidden="true"></div>
         
         <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark position-absolute w-100 pt-3" style="z-index: 10;">
+        <nav class="navbar navbar-expand navbar-dark position-absolute w-100 pt-3" style="z-index: 10;">
             <div class="container pe-4">
                 <!-- Hotel Logo -->
                 <a class="navbar-brand" href="#">
-                    <img src="img/jade.png" alt="Jade Palace Logo" style="height: 50px; position: absolute; top: 10px; left: 10px; filter: brightness(1.2) contrast(1.2);">
+                    <img src="img/jade.png" alt="Jade Palace Logo" style="height: 50px; position: absolute; top: 10px; left: 10px; filter: brightness(1.2) contrast(1.2);" >
                 </a>
                
-                <!-- Mobile Menu Toggle Button -->
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Navigation Menu Items -->
-                <div class="collapse navbar-collapse nav-menu" id="navbarNav">
-                    <ul class="navbar-nav ms-auto ">
-                        <li class="nav-item me-4">
+                <!-- Navigation Menu Items - Always visible -->
+                <div class="nav-menu" id="navbarNav">
+                    <ul class="navbar-nav ms-auto small-screen-nav">
+                        <li class="nav-item me-md-4 me-2">
                             <a class="nav-link text-dark nav-font" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item me-4">
@@ -42,7 +38,7 @@
                             <a class="nav-link text-dark nav-font" href="#room">Room</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark nav-font" href="#contact">Contact Us</a>
+                            <a class="nav-link text-dark nav-font" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +56,7 @@
         
         <!-- Scroll Indicator at Bottom -->
         <div class="position-absolute bottom-0 start-50 translate-middle-x">
-            <img src="./img/Scroll.png" alt="Scroll">
+            <img src="./img/Scroll.png" alt="Scroll" class="img-fluid" style="max-width: 50px; width: 100%;">
         </div>
     </header>
     
@@ -202,11 +198,11 @@
                     <!-- Social Media Links -->
                     <div class="mt-4">
                         <!-- Facebook -->
-                        <a href="https://www.facebook.com" target="_blank" >
+                        <a href="https://www.facebook.com" target="_blank" class="me-3">
                             <img src="./logo/facebook.png" alt="facebook" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
                         </a>
                         <!-- Twitter -->
-                        <a href="https://www.twitter.com" target="_blank">
+                        <a href="https://www.twitter.com" target="_blank" class="me-3">
                             <img src="./logo/twitter.png" alt="twitter" style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover;">
                         </a>
                         <!-- Instagram -->
@@ -218,18 +214,29 @@
                 
                 <!-- Contact Information Column -->
                 <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <ul class="fa-ul" style="margin-left: 1.65em;">
+                    <h5 class="text-uppercase mb-4 playfair">Contact Us</h5>
+                    <ul class="ps-0" style="list-style-type: none;">
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="contact-icon me-2">
+                                    <i class="fa-solid fa-location-dot"></i>                               
+                                 </div>
+                                <span class="text-break">Kathmandu, Nepal</span>
+                            </div>
                         </li>
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="contact-icon me-2">
+                                    <i class="fa-solid fa-envelope"></i>                                </div>
+                                <span class="text-break">jadepalace@gmail.com</span>
+                            </div>
                         </li>
                         <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
-                        </li>
-                        <li class="mb-3">
-                            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <div class="contact-icon me-2">
+                                    <i class="fa-solid fa-phone"></i>                                </div>
+                                <span class="text-break">+ 01 234 567 88</span>
+                            </div>
                         </li>
                     </ul>
                 </div>

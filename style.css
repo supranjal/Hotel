@@ -41,3 +41,34 @@ html{
   footer a{
     text-decoration: none;
   }
+
+
+
+/* Single media query for mobile devices */
+@media (max-width: 767px) {
+  .nav-font {
+    font-size: 0.75rem;
+    letter-spacing: 0.1px;
+  }
+  
+  /* Push navbar to the right and improve spacing */
+  .navbar-nav {
+    margin-left: 30px !important; /* Push navbar to the right of the logo */
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-item {
+    margin-right: 0.01px !important; /* Consistent spacing between items */
+  }
+  
+  /* Fix logo size and positioning */
+  .logo-img {
+    height: 35px !important; /* Reasonable size, not 1px */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    filter: brightness(1.2) contrast(1.2);
+  }
+}
+
